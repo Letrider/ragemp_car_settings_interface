@@ -1,0 +1,45 @@
+.carWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: vh(23);
+  height: vh(133);
+}
+
+.carImage {
+  width: vh(313);
+  height: vh(141);
+  object-fit: cover;
+  background-position: center center;
+}
+
+.window {
+  position: absolute;
+  cursor: pointer;
+  width: vh(26);
+  height: vh(26);
+}
+
+.frontLeft { top: vh(10); left: vh(210); }
+.frontRight { top: vh(10); right: vh(170); }
+.rearLeft { bottom: vh(10); left: vh(210); }
+.rearRight { bottom: vh(10); right: vh(170); }
+
+.open { 
+  &>circle {
+    stroke: $green-solid;
+  }
+  &>path {
+    fill: $green-solid;
+  }
+}
+.closed { 
+  &>circle {
+    stroke: $red-solid;
+  }
+  &>path {
+    fill: $red-solid;
+  }
+}
+

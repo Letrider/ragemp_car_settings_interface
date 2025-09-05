@@ -1,0 +1,55 @@
+.carControl {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+
+	&>h1 {
+		color: $white-solid;
+
+		font-family: "TT Firs Neue";
+		font-size: vh(16);
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;	
+	}
+}
+
+.subHeader {
+	display: flex;
+	gap: vh(8);
+
+	width: vh(472);
+
+	margin-top: vh(5);
+	margin-bottom: vh(20);
+
+	&>div {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: vh(232);
+		height: vh(36);
+
+
+		padding: vh(7) vh(6);
+		gap: vh(6);
+		border-radius: vh(5);
+
+		background: $button-background;
+		color: $button-color;
+
+
+		&.active {
+			background-color: $button-active-background;
+			border: $button-active-border;
+			color: $white-solid;
+		}
+	}
+}
+
+
+
+

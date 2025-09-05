@@ -1,0 +1,87 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: vh(12);
+}
+.headerRight {
+	display: flex;
+	gap: vh(5)
+}
+.headerTextPrimary {
+	display: flex;
+	gap: vh(5);
+
+	color: $white-solid;
+	font-family: "TT Firs Neue";
+	font-size: vh(18);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.headerTextSecondary {
+	color: $red-solid;
+	font-family: "TT Firs Neue";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.headerDescription {
+	width: vh(250);
+	color: $white-transparent;
+
+	font-family: "TT Firs Neue";
+	font-size: vh(12);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.headerLeft {
+	display: flex;
+	flex-direction: column;
+}
+.headerMiniContainer {
+	display: flex;
+	align-items: center;
+	
+	width: vh(128);
+	height: vh(32);
+
+	padding: vh(7) vh(10);
+	gap: vh(5);
+	border-radius: vh(5);
+
+	background: radial-gradient(122.22% 122.22% at 50% 50%, rgba(81, 81, 81, 0.06) 0%, rgba(217, 217, 217, 0.06) 100%);
+
+	&>span {
+		color: $white-solid;
+		text-align: center;
+		font-size: vh(14);
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	&>p {
+		color: $white-more-transparent;
+		font-family: "TT Firs Neue";
+		font-size: vh(10);
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	&>h3 {
+		color: $white-more-transparent;
+		font-family: "TT Firs Neue";
+		font-size: vh(14);
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}

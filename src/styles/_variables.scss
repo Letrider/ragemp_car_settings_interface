@@ -1,0 +1,19 @@
+@use "./functions" as *;
+
+$white-solid: white;
+$white-transparent: rgba(255, 255, 255, 0.50);
+$white-more-transparent: rgba(255, 255, 255, 0.30);
+
+$background-primary: #0D0D12;
+$button-background: radial-gradient(122.22% 122.22% at 50% 50%, rgba(81, 81, 81, 0.08) 0%, rgba(217, 217, 217, 0.08) 100%);
+$button-border: vh(0.5) solid #515151;
+$button-color: rgba(255, 255, 255, 0.50);
+$button-active-color: $white-solid;
+$button-active-background: rgba(231, 67, 79, 0.16);
+$button-active-border: vh(0.5) solid #E7434F;
+
+$red-solid: #E7434F;
+$red-transparent: rgba(33, 15, 16, 0.16);
+
+$green-solid: #43E748;
+$green-transparent: rgba(67, 231, 72, 0.20);

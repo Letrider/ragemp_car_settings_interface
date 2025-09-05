@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'TT Firs Neue', sans-serif;
+}
+
+div, img, h1,h2,h3,h4, p, span, section, main, body, html {
+	user-select: none;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+
+.background {
+	background-image: url('../shared/assets/background-temp.png');
+}
+
+.full {
+	width: 100vw;
+	height: 100vh;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.textWhite {
+	color: white;
+}

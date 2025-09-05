@@ -1,0 +1,150 @@
+@use "src/styles/_functions" as *;
+
+.iconWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: vh(5);
+	width: vh(24);
+	height: vh(24);
+	background: rgba(255, 255, 255, 0.06);
+}
+
+.clock {
+	min-width: vh(12);
+	min-height: vh(12);
+	width: vh(13);
+	height: vh(13);
+}
+.cloudWeather {
+	min-width: vh(16);
+	min-height: vh(12);
+	width: vh(16);
+	height: vh(12);
+}
+
+.carControl {
+	min-width: vh(16);
+	min-height: vh(10);
+	width: vh(16);
+	height: vh(10);
+}
+
+.carMusic {
+	min-width: vh(10);
+	min-height: vh(14);
+	width: vh(10);
+	height: vh(14);
+}
+
+.carMode {
+	min-width: vh(10);
+	min-height: vh(14);
+	width: vh(8);
+	height: vh(14);
+}
+
+.carClose {
+	min-width: vh(14);
+	min-height: vh(14);
+	width: vh(14);
+	height: vh(14);
+}
+
+.carWindow {
+	width: vh(26);
+	height: vh(26);
+
+	--circle-r: vh(12.25);
+	--circle-cx: vh(13);
+	--circle-cy: vh(13);
+}
+
+.carEngine {
+	width: vh(12);
+	height: vh(10);	
+}
+
+.carLock {
+	width: vh(10);
+	height: vh(12);
+}
+
+.carSeat {
+	width: vh(10);
+	height: vh(12);
+}
+
+.carLightPrimary {
+	width: vh(12);
+	height: vh(12);
+}
+
+.carLightSecondary {
+	width: vh(12);
+	height: vh(10);
+}
+
+.carMark {
+	width: vh(14);
+	height: vh(20);
+
+}
+
+.carTemperature {
+	width: vh(10);
+	height: vh(20);
+}
+
+.carTrunk {
+	width: vh(26);
+	height: vh(26);
+}
+
+.carHood {
+	width: vh(26);
+	height: vh(26);
+}
+
+.carDoor {
+
+}
+
+.carEmergency {
+	width: vh(20);
+	height: vh(18);
+}
+
+.carDoorBackRight, .carDoorLeftBack, .carDoorLeftTop, .carDoorRightTop {
+	width: vh(26);
+	height: vh(26);
+}
+
+.carMediaPreviosTrack {
+	width: vh(30);
+	height: vh(30);
+}
+
+.carMediaPlay {
+	width: vh(30);
+	height: vh(30);
+}
+
+.carMediaPause {
+	width: vh(30);
+	height: vh(30);
+
+	border-radius: vh(5);
+
+	background-color: #242428;
+
+	rect {
+		width: vh(30);
+		height: vh(30);
+	}
+}
+
+.carMediaNextTrack {
+	width: vh(30);
+	height: vh(30);
+}

@@ -1,0 +1,214 @@
+.container {
+	width: 100%;
+	height: vh(320);
+	display: flex;
+	flex-direction: column;
+	gap: vh(6);
+
+	&>h1 {
+		color: $white-solid;
+
+		font-family: "TT Firs Neue";
+		font-size: vh(16);
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+}
+
+.player {
+	display: flex;
+	gap: vh(10);
+
+	width: 100%;
+	height: vh(80);
+	padding: vh(10);
+
+	margin-bottom: vh(12);
+	margin-top: vh(6);
+
+	border-radius: vh(5);
+	background: radial-gradient(122.22% 122.22% at 50% 50%, rgba(81, 81, 81, 0.08) 0%, rgba(217, 217, 217, 0.08) 100%);
+}
+
+.musicWrapper {
+	width: vh(60);
+	height: vh(60);
+	border-radius: vh(5);
+
+	object-fit: cover;
+}
+.music {
+	width: vh(240);
+	height: vh(60);
+	display: flex;
+	flex-direction: column;
+
+	&>p {
+		color: rgba(255, 255, 255, 0.50);
+
+		font-family: "TT Firs Neue";
+		font-size: vh(12);
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	&>span {
+		color: #FFF;
+
+		font-family: "TT Firs Neue";
+		font-size: vh(16);
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+}
+
+.toolsContainer {
+	width: 100%;
+	display: flex;
+}
+
+.toolbar {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		height: vh(21);
+
+		gap: vh(1);
+
+		 &>input[type="range"] {
+    width: 100%;
+    appearance: none;
+    height: vh(2);
+    border-radius: vh(10);
+    background: linear-gradient(
+      to right,
+      $red-solid var(--value, 0%),
+      #444 var(--value, 0%)
+    );
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: vh(10);
+      height: vh(10);
+      border-radius: 50%;
+      background: white;
+      cursor: pointer;
+      margin-top: -vh(4);
+    }
+  }
+
+		&>p {
+			display: flex;
+			align-items: center;
+
+			gap: vh(3);
+
+			color: rgba(255, 255, 255, 0.30);
+			font-family: "TT Firs Neue";
+			font-size: 10px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			&>span {
+				color: #FFF;
+
+				font-family: "TT Firs Neue";
+				font-size: vh(10);
+				font-style: normal;
+				line-height: normal;
+				font-weight: 100;
+			}
+		}
+	}
+
+.tools {
+	width: vh(102);
+	gap: vh(6);
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: vh(5);
+	width: vh(24);
+	height: vh(24);
+
+background: rgba(255, 255, 255, 0.06);
+}
+
+
+.optionsButton {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: vh(10) vh(8);
+
+	width: vh(472);
+	height: vh(40);
+
+	border-radius: 5px;
+	background: radial-gradient(122.22% 122.22% at 50% 50%, rgba(81, 81, 81, 0.08) 0%, rgba(217, 217, 217, 0.08) 100%);
+
+	&>input {
+		appearance: none;
+		outline: none;
+		border: none;
+		background: transparent;
+		width: vh(400);
+		color: $white-solid;
+
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.30);
+
+			font-family: "TT Firs Neue";
+			font-size: vh(14);
+			font-style: normal;
+			font-weight: 100;
+			line-height: normal;
+		}
+	}
+
+}
+
+.optionLeft {
+	display: flex;
+	align-items: center;
+	gap: vh(6);
+
+	&>p {
+		color: $white-solid;
+
+		font-family: "TT Firs Neue";
+		font-size: vh(14);
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
+
+.addIcon {
+	cursor: pointer;
+
+	width: vh(28);
+	height: vh(28);
+	border-radius: vh(5);
+}
+
+.list {
+	height: vh(139);
+	display: flex;
+	flex-direction: column;
+	gap: vh(5);
+	overflow-y: scroll;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
