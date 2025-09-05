@@ -3,6 +3,7 @@ const SvgEngine = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGE
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carEngine"
+    viewBox="0 0 12 10"
     {...props}
   >
     <path

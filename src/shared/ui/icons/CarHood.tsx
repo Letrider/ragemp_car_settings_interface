@@ -3,6 +3,7 @@ const SvgCarHood = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carHood"
+    viewBox="0 0 26 26"
     fill="none"
     {...props}
   >

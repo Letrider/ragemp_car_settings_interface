@@ -3,6 +3,7 @@ const SvgSeat = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGEle
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carSeat"
+    viewBox="0 0 10 12"
     fill="none"
     {...props}
   >

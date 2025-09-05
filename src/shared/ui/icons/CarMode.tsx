@@ -3,6 +3,7 @@ const SvgCarMode = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVG
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carMode"
+    viewBox="0 0 10 14"
     {...props}
   >
     <path

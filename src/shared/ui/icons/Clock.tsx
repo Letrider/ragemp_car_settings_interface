@@ -4,6 +4,7 @@ const SvgClock = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGEl
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="clock"
+    viewBox="0 0 12 12"
     fill="none"
     {...props}
   >

@@ -3,6 +3,7 @@ const SvgCarClose = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSV
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carClose"
+    viewBox="0 0 14 14"
     {...props}
   >
     <path

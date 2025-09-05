@@ -3,6 +3,7 @@ const SvgLock = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGEle
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carLock"
+    viewBox="0 0 10 12"
     {...props}
   >
     <path

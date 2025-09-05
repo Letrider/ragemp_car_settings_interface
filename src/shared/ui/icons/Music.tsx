@@ -3,6 +3,7 @@ const SvgMusic = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGEl
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carMusic"
+    viewBox="0 0 10 14"
     {...props}
   >
     <path

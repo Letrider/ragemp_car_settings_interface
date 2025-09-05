@@ -3,6 +3,7 @@ const SvgMark = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carMark"
+    viewBox="0 0 14 20"
     {...props}
   >
     <path

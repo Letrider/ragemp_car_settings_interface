@@ -3,6 +3,7 @@ const SvgCarDoorBackRight = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carDoorBackRight"
+    viewBox="0 0 26 26"
     {...props}
   >
     <circle cx={13} cy={13} r={12.25} fill="#000" fillOpacity={0.5} />

@@ -3,6 +3,7 @@ const SvgLightPrimary = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="carLightPrimary"
+    viewBox="0 0 12 12"
     {...props}
   >
     <path
