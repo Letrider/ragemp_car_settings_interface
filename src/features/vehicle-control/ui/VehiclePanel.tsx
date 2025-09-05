@@ -26,7 +26,7 @@ const variants = {
 };
 
 export const VehiclePanel = () => {
-	const [activeTab, setActiveTab] = useState<"car" | "music" | "mode">("music");
+	const [activeTab, setActiveTab] = useState<"car" | "music" | "mode">("car");
 
 	const getFill = (tab: "car" | "music" | "mode") =>
 		tab === activeTab ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.5)";

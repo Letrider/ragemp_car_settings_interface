@@ -1,14 +1,9 @@
 import { useVehicleControl } from "../../../model/useVehicleControl";
 import { InfoBar } from "@/features/vehicle-control/ui/infobar/InfoBar";
 import { Switch } from "@/shared/ui/switch/Switch";
-import SvgEngine from "@/shared/ui/icons/Engine";
-import SvgLock from "@/shared/ui/icons/Lock";
-import SvgSeat from "@/shared/ui/icons/Seat";
-import SvgLightPrimary from "@/shared/ui/icons/LightPrimary";
-import SvgLightSecondary from "@/shared/ui/icons/LightSecondary";
-import SvgMark from "@/shared/ui/icons/Mark";
 import styles from "./GeneralTab.module.scss";
 import { useGameStore } from "@/shared/model/store/useGameStore";
+import { Emergency, Temperature, LightPrimary, LightSecondary, Seat, Lock, Engine, Mark } from "@/shared/ui/icons";
 
 export const GeneralTab = () => {
 	const mapMark = useGameStore((s) => s.mapMark);
@@ -28,27 +23,27 @@ export const GeneralTab = () => {
 	return (
 		<section className={styles.container}>
 			<div className={styles.carUtils}>
-				<InfoBar label="Engine" active={engineOn} onClick={toggleEngine} Icon={SvgEngine} />
-				<InfoBar label="Lock" active={isCarClosed} Icon={SvgLock} />
-				<InfoBar label="Seat" active={seatbeltOn} onClick={toggleSeatbelt} Icon={SvgSeat} />
+				<InfoBar label="Engine" active={engineOn} onClick={toggleEngine} Icon={Engine} />
+				<InfoBar label="Lock" active={isCarClosed} Icon={Lock} />
+				<InfoBar label="Seat" active={seatbeltOn} onClick={toggleSeatbelt} Icon={Seat} />
 				<InfoBar
 					label="I. Lights"
 					active={lights === "low" || lights === "high"}
 					onClick={() => setLights("low")}
-					Icon={SvgLightPrimary}
+					Icon={LightPrimary}
 				/>
 				<InfoBar
 					label="Lights"
 					active={lights === "high"}
 					onClick={() => setLights("high")}
-					Icon={SvgLightSecondary}
+					Icon={LightSecondary}
 				/>
 			</div>
 
 			<div className={styles.carInfoBar}>
 				<div className={styles.largeInfoBar}>
 					<div className={styles.iconLarge}>
-						<SvgMark />
+						<Mark />
 					</div>
 					<div className={styles.largeInfoBarTextContainer}>
 						<p>{location}</p>
@@ -58,7 +53,7 @@ export const GeneralTab = () => {
 
 				<div className={styles.largeInfoBar}>
 					<div className={styles.iconLarge}>
-						<SvgMark />
+						<Temperature />
 					</div>
 					<div className={styles.largeInfoBarTextContainer}>
 						<p>Temperature</p>
@@ -68,7 +63,7 @@ export const GeneralTab = () => {
 
 				<div className={styles.largeInfoBar}>
 					<div className={styles.iconLarge}>
-						<SvgMark />
+						<Emergency />
 					</div>
 					<div className={styles.largeInfoBarTextContainer}>
 						<p>Emergency</p>
