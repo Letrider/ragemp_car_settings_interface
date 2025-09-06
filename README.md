@@ -16,6 +16,6 @@ Frontend для CEF-интерфейса на RAGE:MP, реализованны�
 ## Установка
 
 ```bash
-git clone [<repo-url>](https://github.com/Letrider/ragemp_car_settings_interface.git)
+git clone <https://github.com/Letrider/ragemp_car_settings_interface.git>
 cd cef-yourproject
 npm install
