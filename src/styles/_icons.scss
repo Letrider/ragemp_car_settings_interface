@@ -121,13 +121,37 @@
 }
 
 .carMediaPreviosTrack {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	width: vh(30);
 	height: vh(30);
+
+	rect {
+		width: vh(30);
+		height: vh(30);
+	}
+
+	path {
+		transform: translate(vh(-5), vh(-5));
+	}
 }
 
 .carMediaPlay {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	width: vh(30);
 	height: vh(30);
+
+	rect {
+		width: vh(30);
+		height: vh(30);
+	}
 }
 
 .carMediaPause {
@@ -145,6 +169,16 @@
 }
 
 .carMediaNextTrack {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	width: vh(30);
 	height: vh(30);
+
+	rect {
+		width: vh(30);
+		height: vh(30);
+	}
 }

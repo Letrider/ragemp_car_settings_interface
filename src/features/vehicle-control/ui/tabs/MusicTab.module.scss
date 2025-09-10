@@ -71,33 +71,33 @@
 }
 
 .toolbar {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		height: vh(21);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	height: vh(21);
 
-		gap: vh(1);
+	gap: vh(1);
 
-		 &>input[type="range"] {
-    width: 100%;
-    appearance: none;
-    height: vh(2);
-    border-radius: vh(10);
-    background: linear-gradient(
-      to right,
-      $red-solid var(--value, 0%),
-      #444 var(--value, 0%)
-    );
+	&>input[type="range"] {
+		width: 100%;
+		appearance: none;
+		height: vh(2);
+		border-radius: vh(10);
+		background: linear-gradient(
+			to right,
+			$red-solid var(--value, 0%),
+			#444 var(--value, 0%)
+		);
 
-    &::-webkit-slider-thumb {
-      appearance: none;
-      width: vh(10);
-      height: vh(10);
-      border-radius: 50%;
-      background: white;
-      cursor: pointer;
-      margin-top: -vh(4);
-    }
+		&::-webkit-slider-thumb {
+			appearance: none;
+			width: vh(10);
+			height: vh(10);
+			border-radius: 50%;
+			background: white;
+			cursor: pointer;
+			margin-top: -vh(4);
+		}
   }
 
 		&>p {
@@ -106,29 +106,32 @@
 
 			gap: vh(3);
 
-			color: rgba(255, 255, 255, 0.30);
-			font-family: "TT Firs Neue";
-			font-size: 10px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
 			&>span {
 				color: #FFF;
-
+				
 				font-family: "TT Firs Neue";
 				font-size: vh(10);
 				font-style: normal;
 				line-height: normal;
 				font-weight: 100;
 			}
+			color: rgba(255, 255, 255, 0.30);
+			font-family: "TT Firs Neue";
+			font-size: vh(10);
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
 		}
 	}
 
 .tools {
 	width: vh(102);
 	gap: vh(6);
+
 	display: flex;
 	align-items: center;
+
+	margin-left: vh(25);
 }
 
 .icon {
@@ -164,6 +167,15 @@ background: rgba(255, 255, 255, 0.06);
 		width: vh(400);
 		color: $white-solid;
 
+		&::-webkit-slider-thumb {
+			appearance: none;
+			width: vh(20);
+			height: vh(20);
+			border-radius: 50%;
+			background: $white-solid;
+			cursor: pointer;
+		}
+
 		&::placeholder {
 			color: rgba(255, 255, 255, 0.30);
 
@@ -173,6 +185,8 @@ background: rgba(255, 255, 255, 0.06);
 			font-weight: 100;
 			line-height: normal;
 		}
+
+
 	}
 
 }
@@ -199,6 +213,25 @@ background: rgba(255, 255, 255, 0.06);
 	width: vh(28);
 	height: vh(28);
 	border-radius: vh(5);
+
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: vh(30);
+	height: vh(30);
+
+	rect {
+		position: absolute;
+		width: vh(30);
+		height: vh(30);
+	}
+
+	path {
+		transform: translate(vh(1), vh(1));
+
+	}
 }
 
 .list {
